@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "metasync"
+version = "0.1.0"
+description = "Manage a Metabase installation via git backed YAML files"
+authors = ["z3z1ma <butler.alex2010@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "metabase" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+pydantic = "^1.10.2"
+requests = "^2.28.1"
+aiohttp = "^3.8.3"
+"ruamel.yaml" = "^0.17.21"
+typing-extensions = "^4.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
